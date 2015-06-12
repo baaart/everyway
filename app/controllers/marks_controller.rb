@@ -19,6 +19,7 @@ class MarksController < ApplicationController
 
   def create
     @mark = Mark.new mark_params
+    @mark.votes = 1
     @mark.save
     head 200
   end
