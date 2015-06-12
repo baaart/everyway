@@ -1,3 +1,3 @@
 class Mark < ActiveRecord::Base
-  validates :lat, :lon, :category, :kind, :state, presence: true
+  validates :lat, :lng, :category, :kind, :state, presence: true
 end
