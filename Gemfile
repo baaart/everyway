@@ -30,6 +30,9 @@ gem 'haml'
 gem 'omniauth-facebook'
 gem 'omniauth-openid'
 
+#rakc-cors
+gem 'rack-cors', :require => 'rack/cors'
+
 #use dotenv
 gem 'dotenv'
 
