@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150612040044) do
+ActiveRecord::Schema.define(version: 20150612054936) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "marks", force: :cascade do |t|
-    t.float  "lat"
-    t.float  "lon"
+    t.string "lat"
+    t.string "lon"
     t.string "category"
     t.string "type"
     t.string "state"
