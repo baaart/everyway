@@ -32,6 +32,12 @@ class MarksController < ApplicationController
     end
   end
 
+  def destroy
+    @mark = Mark.find(params[:id])
+    @mark.delete
+    head 200
+  end
+
   private
   def mark_params
     params.permit(:lat, :lng, :category, :kind, :state)
