@@ -20,7 +20,7 @@ class MarksController < ApplicationController
   def create
     @mark = Mark.new mark_params
     @mark.save
-    redirect_to root_path
+    head 200
   end
 
   def update
