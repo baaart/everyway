@@ -1,7 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+Mark.create(lat: '52.401447', lon: '16.926348', category: 'facility', kind: 'elevator', state: 'ok')
+Mark.create(lat: '52.401604', lon: '16.921069', category: 'facility', kind: 'elevator', state: 'broken')
+Mark.create(lat: '52.401080', lon: '16.912615', category: 'obstacle', kind: 'stairs', state: 'broken')
+Mark.create(lat: '52.404458', lon: '16.924245', category: 'obstacle', kind: 'high_curb', state: 'ok')
+Mark.create(lat: '52.403856', lon: '16.932227', category: 'facility', kind: 'low_curb', state: 'ok')
+Mark.create(lat: '52.404956', lon: '16.924717', category: 'facility', kind: 'elevator', state: 'ok')
+Mark.create(lat: '52.399379', lon: '16.934974', category: 'facility', kind: 'ramp', state: 'ok')
+Mark.create(lat: '52.405034', lon: '16.927721', category: 'facility', kind: 'elevator', state: 'broken')
+Mark.create(lat: '52.403673', lon: '16.928665', category: 'obstacle', kind: 'stairs', state: 'ok')
+Mark.create(lat: '52.402259', lon: '16.930553', category: 'facility', kind: 'elevator', state: 'broken')
+Mark.create(lat: '52.402923', lon: '16.933654', category: 'obstacle', kind: 'high_curb', state: 'ok')
+Mark.create(lat: '52.400783', lon: '16.928246', category: 'facility', kind: 'elevator', state: 'broken')
+Mark.create(lat: '52.401987', lon: '16.927216', category: 'obstacle', kind: 'slope', state: 'ok')
