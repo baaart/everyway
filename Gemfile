@@ -26,6 +26,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #use Haml for views
 gem 'haml'
 
+#Use omniauth for fb auth
+gem 'omniauth-facebook'
+gem 'omniauth-openid'
+
+#use dotenv
+gem 'dotenv'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

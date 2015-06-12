@@ -9,11 +9,12 @@ class MarksController < ApplicationController
   end
   
   def index
-   @marks = Mark.all
-   respond_to do |format|
+    #redirect_to login_path and return if current_ser.nil?
+    @marks = Mark.all
+    respond_to do |format|
       format.html
-      format.json { render json: @marks }
-   end
+      format.json { render json: @marks, include: :comments }
+    end
   end
 
   def create
