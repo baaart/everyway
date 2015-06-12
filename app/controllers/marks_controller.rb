@@ -26,7 +26,7 @@ class MarksController < ApplicationController
   def update
     @mark = Mark.find(params[:id])
     if @mark.update(mark_params)
-      redirect_to root_path
+      head 200
     else
       head 500
     end
