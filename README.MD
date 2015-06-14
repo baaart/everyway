@@ -13,6 +13,7 @@ $ rails server
 ```
 
 Acces application at: http://localhost:3000
+
 Heroku: http://everyway.herokuapp.com/
 
 ##Obstacles and Facilities names:
