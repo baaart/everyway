@@ -21,7 +21,9 @@ class MarksController < ApplicationController
     @mark = Mark.new mark_params
     @mark.votes = 1
     @mark.save
-    head 200
+    respond_to do |format|
+      format.json { render json: @mark, include: :comments }
+    end
   end
 
   def update
