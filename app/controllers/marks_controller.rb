@@ -43,7 +43,7 @@ class MarksController < ApplicationController
 
   private
   def mark_params
-    params.permit(:lat, :lng, :category, :kind, :state)
+    params.permit(:lat, :lng, :category, :kind, :state, :votes)
   end
 
 end
